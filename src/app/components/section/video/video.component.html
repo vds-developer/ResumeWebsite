@@ -1,0 +1,30 @@
+<section [style.background-color] ="backgroundColor">
+  <div class="section-size  text-center">
+    <div>
+      <h1 class="section-title">{{title}}</h1>
+      <p>{{detail}}</p>
+    </div>
+    <div class="video-container">
+      <div class="thumbnail" (click)="thumbNailClick()">
+        <img class="section-thumbnail-full" src="https://img.youtube.com/vi/_-CD_5YhJTA/maxresdefault.jpg" alt="Youtube Video">
+        <a class="youtube-play"  ></a>
+
+      </div>
+      <div class="full-screen-overlay" id="frame0" (click)="closeVideoOverlay()">
+        <a class="close-btn" href="javascript:void(0)" (click)="closeVideoOverlay()">&times;</a>
+        <iframe class="section-iframe-full" [src]="sanitizer.bypassSecurityTrustResourceUrl(videoUrl)" frameborder="0" allowfullscreen="allowfullscreen"
+    mozallowfullscreen="mozallowfullscreen"
+    msallowfullscreen="msallowfullscreen"
+    oallowfullscreen="oallowfullscreen"
+    webkitallowfullscreen="webkitallowfullscreen"></iframe>
+        <!--<video class="video-background">
+    <source [src]="" type="video/mp4">
+  </video>-->
+      </div>
+  
+    </div>
+    <a *ngIf="showButton"><input class="section-large-btn mt-5" type="button" [value]="buttonTxt" /></a>
+  </div>
+
+
+</section>

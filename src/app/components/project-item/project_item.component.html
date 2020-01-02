@@ -1,0 +1,30 @@
+  <!--Figure ID is initialized when page loads-->
+
+<div class="p-3 text-center" style="background-color:gray">
+
+  <figure class="position-relative project-image-container">
+    <img class="projectImage" src="~/../assets/images/coding/coding1.jpeg" alt="" />
+    <div class="projectImageDetail">
+      <h2>{{projectName}}</h2>
+      <div class="projectImageDescription">
+        <div>
+          <p>
+            {{projectDescription}}
+          </p>
+        </div>
+        <div>
+          <ul class="projectMetaData" >
+            <li [ngClass]="getMetaDataClass(element)" *ngFor="let element of projectMetaData">{{element}}</li>
+            <!--<li *ngIf="element == 'CSS'" class="metadata-css">CSS</li>
+            <li *ngIf="element == 'Javascript'" class="metadata-python">Javascript</li>
+            <li *ngIf="element == 'Java'" class="metadata-java">Java</li>
+            <li *ngIf="element == 'Python'" class="metadata-python">Python</li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="moreDetail">More Detail</p>
+    <p class="line"></p>
+  </figure>
+
+</div>

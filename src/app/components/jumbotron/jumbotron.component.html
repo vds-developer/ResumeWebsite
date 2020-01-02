@@ -1,0 +1,18 @@
+<div class="position-relative">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid container">
+      <div class="jumbotron-content">
+        <h4>{{subTitle}}</h4>
+        <h1>{{title}}</h1>
+        <br />
+        <input *ngIf="showButton" class="jumbotron-large-btn" type="button" [value]="buttonTxt"/>
+      </div>
+    </div>
+  </div>
+  <div class="video-container">
+    <video preload="auto" muted autoplay loop class="video-background" [poster]="imageSrc">
+      <source [src]="videoSrc" type="video/mp4">
+    </video>
+    
+  </div>
+</div>

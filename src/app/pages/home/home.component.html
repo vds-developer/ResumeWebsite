@@ -1,0 +1,8 @@
+<div>
+  <my-jumbotron title="Please watch this video" subTitle="Welcome to my website" [showButton]="true" buttonTxt="Watch video" videoSrc = "../assets/videos/coding/coding1.mp4"></my-jumbotron>
+  <title-section [title]="title" [detail]="detail" backgroundColor="grey" [showButton]="true" buttonTxt="Button"></title-section>
+
+  <image-list-section [list]="myProjects" [stopIndex]="3" [columnClass]="4" [showButton]="true" [buttonTxt]="'Go to Project'"></image-list-section>
+  <image-list-section [list]="myPersonal" [stopIndex]="6" [columnClass]="3" [imageWidth]="300" [imageHeight]="300" backgroundColor="#D3D3D3" [showButton]="true" [buttonTxt]="'Go to Personl'"></image-list-section>
+  <video-section title="Video Section" detail="This is a video from youtube maybe can change" backgroundColor="grey" [showButton]="true" buttonTxt="Watch video" src="https://www.youtube.com/embed/yO1dJt50Bfg"></video-section>
+</div>

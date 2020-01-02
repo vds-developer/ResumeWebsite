@@ -1,0 +1,16 @@
+<section [style.background-color] ="backgroundColor">
+  <div class="text-center section-size">
+    <h1 class="section-title">My Projects</h1>
+   
+    <div  *ngFor="let element of list | slice:0:stopIndex; let i = index">
+      <div *ngIf="i%column == 0" class="row my-5">
+        <div *ngFor="let item of list.slice(i,i+column)|slice:0:stopIndex;" [ngClass]="getColumnClass()">
+          <image-block [imageURL]="element.imageUrl" [imageTxt]="element.imageText" [width]="width" [height]="height" [projectCode]="element.title"
+                       [projectName]="element.subTitle" [showButton]="true" [btnTxt]="element.buttonText" btnLink=""></image-block>
+        </div>
+        
+      </div>
+    </div>
+    <a *ngIf = "showButton" href="#"><input class="section-large-btn mt-5" type="button" [value]="buttonTxt" /></a>
+  </div>
+</section>

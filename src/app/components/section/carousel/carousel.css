@@ -1,0 +1,15 @@
+.carousel img {
+  display: block;
+  height: auto;
+  line-height: 1;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+  width: 350px;
+  height: 500px;
+}
+
+.carousel{
+
+
+}

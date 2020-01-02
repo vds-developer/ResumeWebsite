@@ -1,0 +1,114 @@
+.project-image-container {
+  cursor: pointer;
+  
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #42b078;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.projectImageDetail{
+  display:initial;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  text-align:center;
+  background-color:rgba(0,0,0,0.8);
+  color:white;
+}
+
+.project-image-container .projectImageDescription {
+  max-height: 200px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s; /* Safari */
+}
+
+.project-image-container:hover .projectImageDescription {
+  /*display:none;*/
+  max-height: 0;
+}
+
+p.line:after {
+  -webkit-transition: width 0.35s;
+  transition: width 0.35s;
+  position: absolute;
+  text-align: center;
+  left: 10%;
+  bottom: 40%;
+  width: 0;
+  height: 5px;
+  background: blue;
+  content: '';
+}
+
+.project-image-container:hover p.line:after {
+  width: 80%;
+  transform: translateY(50%);
+  margin: auto;
+}
+
+.project-image-container .moreDetail {
+  margin: auto;
+  -webkit-transition: bottom 0.5s linear 3s;
+  transition: all 0.5s;
+  position: absolute;
+  color: transparent;
+  width: 100%;
+  left: 0;
+  bottom: 0%;
+  text-transform: uppercase;
+}
+
+.project-image-container:hover .moreDetail {
+  display: block;
+  bottom: 45%;
+  margin: auto;
+  color: white;
+}
+
+  .project-image-container:hover img {
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+  }
+
+
+  .projectMetaData {
+    list-style: none;
+    padding:0;
+  }
+
+
+    .projectMetaData li {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 2px;
+      border-radius: 20%;
+    }
+
+.metadata-html {
+  background-color: yellow
+}
+
+.metadata-css {
+  background-color: blue
+}
+.metadata-java {
+  background-color: green
+}
+.metadata-python {
+  background-color: pink;
+}
+
+.metadata-javascript {
+  background-color: lightgreen;
+}

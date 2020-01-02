@@ -1,0 +1,66 @@
+.jumbotron-content{
+  text-align:center;
+}
+
+  .jumbotron-content h4 {
+    font-size:1.5rem
+  }
+
+  .jumbotron-content h1 {
+    font-size:4.5rem;
+  }
+
+.jumbotron-large-btn {
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  color: white;
+  border-radius: 0;
+  padding: 18px 80px 20px;
+  transition: all 0.7s ease-out;
+  background: linear-gradient(270deg, rgba(0,0,128,0.8), rgba(102,102,255,0.8), rgba(255,0,255,0), rgba(204,102,153,0));
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: none;
+  border: 3px solid white;
+}
+
+  .jumbotron-large-btn:hover {
+    color: #fff;
+    border: 1px solid rgba(223,190,106,0);
+    color: white;
+    background-position: 99% 50%;
+    cursor: pointer;
+  }
+
+
+.video-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.video-container {
+  position: absolute;
+  overflow: hidden;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+

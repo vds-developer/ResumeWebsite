@@ -1,0 +1,44 @@
+<div class="position-relative">
+  <my-jumbotron title="Please watch this video" subTitle="Welcome to my website" [showButton]="true" buttonTxt="Watch video" imageSrc = "../assets/images/coding/coding1.jpeg"></my-jumbotron>
+  <aside class="float-left">
+    <div class="side-bar-search ">
+      <h1 class="mb-3">Search For</h1>
+      <div class="">
+        <!--<div class="">-->
+          <input type="search" class="my-3 search-input" placeholder="Search Project">
+        <!--</div>-->
+        <!--<div class="">-->
+          <button type="submit" class="search-btn">
+            <i class="fa fa-search"></i>
+          </button>
+        <!--</div>-->
+      </div>
+      <div class="my-4">
+        <span>Sort By </span>
+        <select>
+  <option value="mostRecent">Most Recent</option>
+  <option value="leastRecent">Least Recent</option>
+  <option value="byMyPicks">My Favorite</option>
+</select>
+      </div>
+      <div>
+        <p><b>Programming language</b></p>
+        <div *ngIf="true" ><label class="clear-filter"><span class="fa fa-arrow-left "></span>Clear</label></div>
+        <div><label><input type="checkbox" />Check</label></div>
+        <div><label><input type="checkbox" />Check</label></div>
+        <div><label><input type="checkbox" />Check</label></div>
+        <div><label><input type="checkbox" />Check</label></div>
+      </div>
+
+    </div>
+  </aside>
+  <section class="all-project">
+    <div class="row" style="margin:auto">
+
+      <div [ngClass]="{'offset-1': i%3 == 0}" class="col-md-3 project-item" *ngFor="let project of All_Projects; let i =index" style="min-width:300px; ">
+        <div ></div>
+        <project-item projectName="Project 1" projectDescription="afsdfadfasfdafasfafasfasfasdfafaf" [projectMetaData]="project.metaData"></project-item>
+      </div>
+    </div>
+  </section>
+</div>

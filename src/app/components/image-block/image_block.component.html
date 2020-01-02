@@ -1,0 +1,19 @@
+
+  <div class="imageHover">
+    <img [src]="imageURL" [alt]="imageText" [width]="width" [height]="height" />
+    <div>
+
+    </div>
+    <div class="imageDetail">
+      <h3 class="imageTitle">
+        <em>{{projectCode}}</em>
+      </h3>
+      <p>
+        <strong>{{projectName}}</strong>
+      </p>
+      <a *ngIf="showButton" [href]="btnLink">
+        <input class ="image-large-btn" type="button" [value]="btnTxt" />
+      </a>
+    </div>
+  </div>
+

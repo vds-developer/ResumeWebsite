@@ -1,0 +1,40 @@
+.all-project {
+  margin-left: 300px;
+}
+
+.side-bar-search {
+  /*position:fixed;*/
+  /*left:0;
+  top:0;*/
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid black;
+  /*text-align:center;*/
+}
+
+  .side-bar-search .search-input {
+    border-radius: 5% 0 0 5%;
+    border: 1px solid blue;
+  }
+
+  .side-bar-search .search-btn {
+    border-radius: 0 5% 5% 0;
+    border: 1px solid blue;
+  }
+
+  .side-bar-search .clear-filter {
+    cursor: pointer;
+  }
+
+project-item {
+  min-width: 300px;
+
+}
+
+.project-item {
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
