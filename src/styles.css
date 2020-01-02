@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+/*@import '~bootstrap/dist/css/bootstrap.min.css';*/
+@import '~font-awesome/css/font-awesome.css';
+
+
+header {
+  z-index: 100;
+}
+
+.jumbotron {
+  padding: 15rem 4rem;
+  background-color: transparent;
+  margin: 0;
+  color: white;
+}
+
+
+  .nav-link {
+    color: white !important;
+  }
+
+
+  .section-size {
+    padding: 2rem 10rem 5rem;
+    margin: 0rem 10rem;
+  }
+
+.section-title{
+  margin: 10px 15px 20px;
+}
+
+.full-screen-overlay{
+  height:100%;
+  width:100%;
+  z-index:101;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0,0,0,0.8);
+  display:none;
+}
+
+.full-screen-overlay .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+.full-screen-overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+.full-screen-overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .full-screen-overlay a {
+    font-size: 20px
+  }
+
+  .full-screen-overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .jumbotron {
+    padding: 5rem 1rem;
+  }
+
+  .section-size {
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .jumbotron {
+    padding: 5rem 1rem;
+  }
+
+  .section-size {
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+  }
+}
